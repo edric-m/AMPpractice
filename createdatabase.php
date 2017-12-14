@@ -24,7 +24,7 @@
 		film_id int(11) NOT NULL,
 		scene_duration int(10),
 		scene_start_time int(5),
-		scene_weblink varchar(300)
+		scene_weblink varchar(300),
 		reg_date TIMESTAMP
 	)";
 	if (mysqli_query($conn, $scene)) {
@@ -74,7 +74,7 @@
 	$actorscene = "CREATE TABLE actor_scene (
 		film_id int(11) NOT NULL,
 		actor_id int(11) NOT NULL,
-		reg_date TIMESTAMP
+		reg_date TIMESTAMP,
 		PRIMARY KEY (film_id, actor_id)
 	)";
 	if (mysqli_query($conn, $actorscene)) {
@@ -88,7 +88,7 @@
 		film_id int(11) NOT NULL,
 		martial_art_id int(11) NOT NULL,
 		actor_id int(11) NOT NULL,
-		reg_date TIMESTAMP
+		reg_date TIMESTAMP,
 		PRIMARY KEY (film_id, martial_art_id, actor_id)
 	)";
 	if (mysqli_query($conn, $sceneart)) {
