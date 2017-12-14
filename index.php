@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>FSDB Home</title>
-	<link rel="stylesheet" href="/fgdb/css/samplestyle.css">
-</head>
-<body>
-<?php include "header.php";?>
+<?php include "/web/views/header.php";?>
 
 <div class="main">
   <p>Welcome</p>
 </div>
 
-<?php include "footer.php";?>
-</body>
-</html>
+<?php include "/web/views/footer.php";?>
